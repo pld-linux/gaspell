@@ -1,8 +1,8 @@
 
 %define		ver	.30
 
-Summary:	Gnome frontend to the Aspell library
-Summary(pl):	Frontend Gnome do biblioteki aspell
+Summary:	GNOME frontend to the Aspell library
+Summary(pl):	Frontend GNOME do biblioteki aspell
 Name:		gaspell
 Version:	0%{ver}
 Release:	1
@@ -18,7 +18,7 @@ Requires:	aspell
 
 
 %description
-Gnome frontend to the Aspell library. Or put another way a simple
+GNOME frontend to the Aspell library. Or put another way a simple
 spell checker that does a way better job than ispell does with coming
 up with suggestions.
 
