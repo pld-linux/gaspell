@@ -10,6 +10,7 @@ License:	GPL
 Group:		Applications/Text
 Vendor:		Kevin Atkinson <kevinatk@home.com>
 Source0:	http://aspell.sourceforge.net/%{name}-%{ver}.tar.gz
+# Source0-md5:	c1fe839bda64b16a9a610f2f8564ef66
 URL:		http://aspell.sourceforge.net/
 BuildRequires:	aspell-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
