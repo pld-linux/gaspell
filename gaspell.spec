@@ -9,8 +9,8 @@ Group(de):	Applikationen/Text
 Group(fr):	Utilitaires/Texte
 Group(pl):	Aplikacje/Tekst
 Vendor:		Kevin Atkinson <kevinatk@home.com>
-Source0:	%{name}-%{version}.tar.gz
-URL:		http://metalab.unc.edu/kevina/aspell
+Source0:	http://aspell.sourceforge.net/%{name}-%{version}.tar.gz
+URL:		http://aspell.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	aspell
 
