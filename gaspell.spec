@@ -7,7 +7,7 @@ Group:		Applications/Text
 Vendor:		Kevin Atkinson <kevinatk@home.com>
 Source:		%{name}-%{version}.tar.gz
 URL:		http://metalab.unc.edu/kevina/aspell
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	aspell
 
 %description
