@@ -1,11 +1,13 @@
 Summary:	Gnome frontend to the Aspell library
+Summary(pl):	Frontend Gnome do biblioteki aspell
 Name:		gaspell
 Version:	.28.5
 Release:	1
 License:	GPL
-Group:		Utilities/Text
+Group:		Applications/Text
+Group(de):	Applikationen/Text
 Group(fr):	Utilitaires/Texte
-Group(pl):	Narzêdzia/Tekst
+Group(pl):	Aplikacje/Tekst
 Vendor:		Kevin Atkinson <kevinatk@home.com>
 Source0:	%{name}-%{version}.tar.gz
 URL:		http://metalab.unc.edu/kevina/aspell
@@ -26,18 +28,20 @@ ispell radzi sobie z propozycjami wymienników.
 %setup -q
 
 %build
-%{__make} CXXFLAGS=$RPM_OPT_FLAGS ASPELL_PREFIX=%{_prefix}
+%{__make} CXXFLAGS="%{rpmcflags}" ASPELL_PREFIX=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-install -s gaspell $RPM_BUILD_ROOT%{_bindir}
+install gaspell $RPM_BUILD_ROOT%{_bindir}
+
+gzip -9nf ChangeLog README TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README TODO
+%doc ChangeLog.gz README.gz TODO.gz
 %attr(755,root,root) %{_bindir}/gaspell
