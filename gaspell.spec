@@ -8,9 +8,6 @@ Version:	0%{ver}
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Group(de):	Applikationen/Text
-Group(fr):	Utilitaires/Texte
-Group(pl):	Aplikacje/Tekst
 Vendor:		Kevin Atkinson <kevinatk@home.com>
 Source0:	http://aspell.sourceforge.net/%{name}-%{ver}.tar.gz
 URL:		http://aspell.sourceforge.net/
