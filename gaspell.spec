@@ -11,7 +11,7 @@ Group:		Applications/Text
 Vendor:		Kevin Atkinson <kevinatk@home.com>
 Source0:	http://aspell.sourceforge.net/%{name}-%{ver}.tar.gz
 URL:		http://aspell.sourceforge.net/
-BuildRequire:	aspell-devel
+BuildRequires:	aspell-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	aspell
 
