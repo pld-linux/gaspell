@@ -1,5 +1,5 @@
 
-%define		ver	.28.5
+%define		ver	.30
 
 Summary:	Gnome frontend to the Aspell library
 Summary(pl):	Frontend Gnome do biblioteki aspell
@@ -14,6 +14,8 @@ URL:		http://aspell.sourceforge.net/
 BuildRequires:	aspell-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	aspell
+
+%define		_prefix		/usr/X11R6
 
 %description
 Gnome frontend to the Aspell library. Or put another way a simple
@@ -34,8 +36,10 @@ ispell radzi sobie z propozycjami wymienników.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
 install gaspell $RPM_BUILD_ROOT%{_bindir}
+install gaspell.desktop $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
 gzip -9nf ChangeLog README TODO
 
@@ -46,3 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog.gz README.gz TODO.gz
 %attr(755,root,root) %{_bindir}/gaspell
+%{_applnkdir}/Utilities/gaspell.desktop
