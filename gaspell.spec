@@ -15,7 +15,6 @@ BuildRequires:	aspell-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	aspell
 
-%define		_prefix		/usr/X11R6
 
 %description
 Gnome frontend to the Aspell library. Or put another way a simple
