@@ -24,7 +24,7 @@ up with suggestions.
 
 %description -l pl
 Gaspell to interfejs (frontend) do biblioteki Aspell. Innymi s³owy
-jest to narzedzie do sprawdzania pisownie które o wiele lepiej ni¿
+jest to narzêdzie do sprawdzania pisownie które o wiele lepiej ni¿
 ispell radzi sobie z propozycjami wymienników.
 
 %prep
