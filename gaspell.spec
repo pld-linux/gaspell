@@ -26,7 +26,7 @@ ispell radzi sobie z propozycjami wymienników.
 %setup -q
 
 %build
-make CXXFLAGS=$RPM_OPT_FLAGS ASPELL_PREFIX=%{_prefix}
+%{__make} CXXFLAGS=$RPM_OPT_FLAGS ASPELL_PREFIX=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
