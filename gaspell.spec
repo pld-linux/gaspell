@@ -41,13 +41,11 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 install gaspell $RPM_BUILD_ROOT%{_bindir}
 install gaspell.desktop $RPM_BUILD_ROOT%{_applnkdir}/Utilities
 
-gzip -9nf ChangeLog README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog.gz README.gz TODO.gz
+%doc ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/gaspell
 %{_applnkdir}/Utilities/gaspell.desktop
