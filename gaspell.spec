@@ -15,6 +15,11 @@ Gnome frontend to the Aspell library. Or put another way a simple spell
 checker that does a way better job than ispell does with coming up with
 suggestions.
 
+%description -l pl
+Gaspell to interfejs (frontend) do biblioteki Aspell. Innymi s³owy jest to
+narzedzie do sprawdzania pisownie które o wiele lepiej ni¿ ispell radzi sobie
+z propozycjami wymienników.
+
 %prep
 %setup -q
 
