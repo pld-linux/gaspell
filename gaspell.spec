@@ -1,7 +1,10 @@
+
+%define		ver	.28.5
+
 Summary:	Gnome frontend to the Aspell library
 Summary(pl):	Frontend Gnome do biblioteki aspell
 Name:		gaspell
-Version:	.28.5
+Version:	0%{ver}
 Release:	1
 License:	GPL
 Group:		Applications/Text
@@ -9,7 +12,7 @@ Group(de):	Applikationen/Text
 Group(fr):	Utilitaires/Texte
 Group(pl):	Aplikacje/Tekst
 Vendor:		Kevin Atkinson <kevinatk@home.com>
-Source0:	http://aspell.sourceforge.net/%{name}-%{version}.tar.gz
+Source0:	http://aspell.sourceforge.net/%{name}-%{ver}.tar.gz
 URL:		http://aspell.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	aspell
@@ -25,7 +28,7 @@ jest to narzedzie do sprawdzania pisownie które o wiele lepiej ni¿
 ispell radzi sobie z propozycjami wymienników.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{ver}
 
 %build
 %{__make} CXXFLAGS="%{rpmcflags}" ASPELL_PREFIX=%{_prefix}
