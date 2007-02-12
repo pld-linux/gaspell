@@ -2,7 +2,7 @@
 %define		ver	.30
 
 Summary:	GNOME frontend to the Aspell library
-Summary(pl):	Frontend GNOME do biblioteki aspell
+Summary(pl.UTF-8):   Frontend GNOME do biblioteki aspell
 Name:		gaspell
 Version:	0%{ver}
 Release:	1
@@ -22,10 +22,10 @@ GNOME frontend to the Aspell library. Or put another way a simple
 spell checker that does a way better job than ispell does with coming
 up with suggestions.
 
-%description -l pl
-Gaspell to interfejs (frontend) do biblioteki Aspell. Innymi s³owy
-jest to narzêdzie do sprawdzania pisownie które o wiele lepiej ni¿
-ispell radzi sobie z propozycjami wymienników.
+%description -l pl.UTF-8
+Gaspell to interfejs (frontend) do biblioteki Aspell. Innymi sÅ‚owy
+jest to narzÄ™dzie do sprawdzania pisownie ktÃ³re o wiele lepiej niÅ¼
+ispell radzi sobie z propozycjami wymiennikÃ³w.
 
 %prep
 %setup -q -n %{name}-%{ver}
