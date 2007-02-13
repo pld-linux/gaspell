@@ -2,7 +2,7 @@
 %define		ver	.30
 
 Summary:	GNOME frontend to the Aspell library
-Summary(pl.UTF-8):   Frontend GNOME do biblioteki aspell
+Summary(pl.UTF-8):	Frontend GNOME do biblioteki aspell
 Name:		gaspell
 Version:	0%{ver}
 Release:	1
